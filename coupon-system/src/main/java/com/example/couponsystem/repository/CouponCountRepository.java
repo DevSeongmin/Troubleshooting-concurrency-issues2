@@ -21,5 +21,6 @@ public class CouponCountRepository {
 
 	public void reset() {
 		redisTemplate.delete("coupon_count");
+		redisTemplate.delete("applied_user");
 	}
 }
